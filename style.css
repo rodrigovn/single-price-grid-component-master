@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+	---cyan: hsl(179, 62%, 43%);
+	---bright-cyan: hsl(179, 72%, 46%);
+	---bright-yellow: hsl(71, 73%, 54%);
+	---light-gray: hsl(204, 43%, 93%);
+	---grayish-blue: hsl(218, 22%, 67%);
+	---bright-green: hsl(75, 100%, 45%);
+}
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+html{
+	background-color: var(---light-gray);
+}
+body{
+	background-color: var(---light-gray);
+	padding: 40px 10px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.container{
+	display: flex;
+	flex-flow: column;
+	max-width: 400px;
+}
+.join-comunity-container{
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+}
+.join-comunity-container h1 {
+	color: var(---cyan);
+	font-size: 18px;
+}
+.join-comunity-container h2 {
+	color: var(---bright-green);
+}
+.join-comunity-container p{
+	color: var(---grayish-blue);
+	font-weight: 400;
+}
+.subscription-why-container{
+	display: flex;
+	flex-flow: column;
+}
+.montly-box{
+	background-color: var(---cyan);
+	padding: 20px;
+	display: flex;
+	flex-flow: column;
+	gap: 5px;
+}
+.montly-box h1{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.montly-box h2{
+	font-weight: 400;
+	color: var(---grayish-blue);
+}
+.montly-box h2 span{
+	font-weight: 700;
+	font-size: 30px;
+}
+.montly-box p {
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+button{
+	background-color: var(---bright-green);
+	border: none;
+	border-radius: 5px;
+	padding: 10px 30px;
+	font-weight: 700;
+	box-shadow: 0 10px 6px -6px var(---cyan);
+	max-width: 300px;
+	cursor: pointer;
+}
+.qualifications-box{
+	background-color: var(---bright-cyan);
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+	padding: 20px;
+}
+.qualifications-box h1{
+	font-weight: 700;
+	font-size: 18px;
+}
+.qualifications-box ul{
+	list-style-type: none;
+	font-weight: 400;
+}
+.qualifications-box ul li{
+	list-style-type: none;
+	font-weight: 400;
+}
+footer{
+	display: none;
+}
+@media only screen and (min-width: 1000px){
+	.container{
+		display: flex;
+		flex-flow: column;
+		max-width: 600px;
+	}
+	.subscription-why-container{
+		display: flex;
+		flex-flow: row;
+	}
+	.qualifications-box{
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+	.montly-box{
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+}
